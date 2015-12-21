@@ -12,6 +12,8 @@
 		49CCF0B51C27DFC5003A47DE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49CCF0B31C27DFC5003A47DE /* MainMenu.xib */; };
 		49CCF0C01C27DFC5003A47DE /* AtmBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CCF0BF1C27DFC5003A47DE /* AtmBarTests.swift */; };
 		49CCF0CB1C27DFC5003A47DE /* AtmBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CCF0CA1C27DFC5003A47DE /* AtmBarUITests.swift */; };
+		49CCF0D91C27FB94003A47DE /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CCF0D81C27FB94003A47DE /* StatusMenuController.swift */; };
+		49CCF0DB1C27FD8F003A47DE /* AtmApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CCF0DA1C27FD8F003A47DE /* AtmApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		49CCF0C61C27DFC5003A47DE /* AtmBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AtmBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49CCF0CA1C27DFC5003A47DE /* AtmBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmBarUITests.swift; sourceTree = "<group>"; };
 		49CCF0CC1C27DFC5003A47DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49CCF0D81C27FB94003A47DE /* StatusMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
+		49CCF0DA1C27FD8F003A47DE /* AtmApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtmApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				49CCF0AF1C27DFC5003A47DE /* AppDelegate.swift */,
+				49CCF0D81C27FB94003A47DE /* StatusMenuController.swift */,
 				49CCF0B11C27DFC5003A47DE /* Assets.xcassets */,
 				49CCF0B31C27DFC5003A47DE /* MainMenu.xib */,
 				49CCF0B61C27DFC5003A47DE /* Info.plist */,
+				49CCF0DA1C27FD8F003A47DE /* AtmApi.swift */,
 			);
 			path = AtmBar;
 			sourceTree = "<group>";
@@ -187,6 +193,7 @@
 				TargetAttributes = {
 					49CCF0AB1C27DFC5003A47DE = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = PPHZBRPP43;
 					};
 					49CCF0BA1C27DFC5003A47DE = {
 						CreatedOnToolsVersion = 7.2;
@@ -249,6 +256,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49CCF0DB1C27FD8F003A47DE /* AtmApi.swift in Sources */,
+				49CCF0D91C27FB94003A47DE /* StatusMenuController.swift in Sources */,
 				49CCF0B01C27DFC5003A47DE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,7 +388,6 @@
 		49CCF0D01C27DFC5003A47DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = AtmBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -391,7 +399,6 @@
 		49CCF0D11C27DFC5003A47DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = AtmBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -471,6 +478,7 @@
 				49CCF0D11C27DFC5003A47DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49CCF0D21C27DFC5003A47DE /* Build configuration list for PBXNativeTarget "AtmBarTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +487,7 @@
 				49CCF0D41C27DFC5003A47DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49CCF0D51C27DFC5003A47DE /* Build configuration list for PBXNativeTarget "AtmBarUITests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +496,7 @@
 				49CCF0D71C27DFC5003A47DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
