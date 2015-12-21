@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49CCF0B01C27DFC5003A47DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CCF0AF1C27DFC5003A47DE /* AppDelegate.swift */; };
+		49CCF0B21C27DFC5003A47DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49CCF0B11C27DFC5003A47DE /* Assets.xcassets */; };
+		49CCF0B51C27DFC5003A47DE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49CCF0B31C27DFC5003A47DE /* MainMenu.xib */; };
+		49CCF0C01C27DFC5003A47DE /* AtmBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CCF0BF1C27DFC5003A47DE /* AtmBarTests.swift */; };
+		49CCF0CB1C27DFC5003A47DE /* AtmBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CCF0CA1C27DFC5003A47DE /* AtmBarUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49CCF0BC1C27DFC5003A47DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49CCF0A41C27DFC5003A47DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49CCF0AB1C27DFC5003A47DE;
+			remoteInfo = AtmBar;
+		};
+		49CCF0C71C27DFC5003A47DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49CCF0A41C27DFC5003A47DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49CCF0AB1C27DFC5003A47DE;
+			remoteInfo = AtmBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		49CCF0AC1C27DFC5003A47DE /* AtmBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtmBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49CCF0AF1C27DFC5003A47DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		49CCF0B11C27DFC5003A47DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49CCF0B41C27DFC5003A47DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		49CCF0B61C27DFC5003A47DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49CCF0BB1C27DFC5003A47DE /* AtmBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AtmBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49CCF0BF1C27DFC5003A47DE /* AtmBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmBarTests.swift; sourceTree = "<group>"; };
+		49CCF0C11C27DFC5003A47DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49CCF0C61C27DFC5003A47DE /* AtmBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AtmBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49CCF0CA1C27DFC5003A47DE /* AtmBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmBarUITests.swift; sourceTree = "<group>"; };
+		49CCF0CC1C27DFC5003A47DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49CCF0A91C27DFC5003A47DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49CCF0B81C27DFC5003A47DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49CCF0C31C27DFC5003A47DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49CCF0A31C27DFC5003A47DE = {
+			isa = PBXGroup;
+			children = (
+				49CCF0AE1C27DFC5003A47DE /* AtmBar */,
+				49CCF0BE1C27DFC5003A47DE /* AtmBarTests */,
+				49CCF0C91C27DFC5003A47DE /* AtmBarUITests */,
+				49CCF0AD1C27DFC5003A47DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49CCF0AD1C27DFC5003A47DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49CCF0AC1C27DFC5003A47DE /* AtmBar.app */,
+				49CCF0BB1C27DFC5003A47DE /* AtmBarTests.xctest */,
+				49CCF0C61C27DFC5003A47DE /* AtmBarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49CCF0AE1C27DFC5003A47DE /* AtmBar */ = {
+			isa = PBXGroup;
+			children = (
+				49CCF0AF1C27DFC5003A47DE /* AppDelegate.swift */,
+				49CCF0B11C27DFC5003A47DE /* Assets.xcassets */,
+				49CCF0B31C27DFC5003A47DE /* MainMenu.xib */,
+				49CCF0B61C27DFC5003A47DE /* Info.plist */,
+			);
+			path = AtmBar;
+			sourceTree = "<group>";
+		};
+		49CCF0BE1C27DFC5003A47DE /* AtmBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				49CCF0BF1C27DFC5003A47DE /* AtmBarTests.swift */,
+				49CCF0C11C27DFC5003A47DE /* Info.plist */,
+			);
+			path = AtmBarTests;
+			sourceTree = "<group>";
+		};
+		49CCF0C91C27DFC5003A47DE /* AtmBarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				49CCF0CA1C27DFC5003A47DE /* AtmBarUITests.swift */,
+				49CCF0CC1C27DFC5003A47DE /* Info.plist */,
+			);
+			path = AtmBarUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49CCF0AB1C27DFC5003A47DE /* AtmBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49CCF0CF1C27DFC5003A47DE /* Build configuration list for PBXNativeTarget "AtmBar" */;
+			buildPhases = (
+				49CCF0A81C27DFC5003A47DE /* Sources */,
+				49CCF0A91C27DFC5003A47DE /* Frameworks */,
+				49CCF0AA1C27DFC5003A47DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AtmBar;
+			productName = AtmBar;
+			productReference = 49CCF0AC1C27DFC5003A47DE /* AtmBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		49CCF0BA1C27DFC5003A47DE /* AtmBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49CCF0D21C27DFC5003A47DE /* Build configuration list for PBXNativeTarget "AtmBarTests" */;
+			buildPhases = (
+				49CCF0B71C27DFC5003A47DE /* Sources */,
+				49CCF0B81C27DFC5003A47DE /* Frameworks */,
+				49CCF0B91C27DFC5003A47DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49CCF0BD1C27DFC5003A47DE /* PBXTargetDependency */,
+			);
+			name = AtmBarTests;
+			productName = AtmBarTests;
+			productReference = 49CCF0BB1C27DFC5003A47DE /* AtmBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		49CCF0C51C27DFC5003A47DE /* AtmBarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49CCF0D51C27DFC5003A47DE /* Build configuration list for PBXNativeTarget "AtmBarUITests" */;
+			buildPhases = (
+				49CCF0C21C27DFC5003A47DE /* Sources */,
+				49CCF0C31C27DFC5003A47DE /* Frameworks */,
+				49CCF0C41C27DFC5003A47DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49CCF0C81C27DFC5003A47DE /* PBXTargetDependency */,
+			);
+			name = AtmBarUITests;
+			productName = AtmBarUITests;
+			productReference = 49CCF0C61C27DFC5003A47DE /* AtmBarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49CCF0A41C27DFC5003A47DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = nicholasren;
+				TargetAttributes = {
+					49CCF0AB1C27DFC5003A47DE = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					49CCF0BA1C27DFC5003A47DE = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 49CCF0AB1C27DFC5003A47DE;
+					};
+					49CCF0C51C27DFC5003A47DE = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 49CCF0AB1C27DFC5003A47DE;
+					};
+				};
+			};
+			buildConfigurationList = 49CCF0A71C27DFC5003A47DE /* Build configuration list for PBXProject "AtmBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49CCF0A31C27DFC5003A47DE;
+			productRefGroup = 49CCF0AD1C27DFC5003A47DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49CCF0AB1C27DFC5003A47DE /* AtmBar */,
+				49CCF0BA1C27DFC5003A47DE /* AtmBarTests */,
+				49CCF0C51C27DFC5003A47DE /* AtmBarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49CCF0AA1C27DFC5003A47DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49CCF0B21C27DFC5003A47DE /* Assets.xcassets in Resources */,
+				49CCF0B51C27DFC5003A47DE /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49CCF0B91C27DFC5003A47DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49CCF0C41C27DFC5003A47DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49CCF0A81C27DFC5003A47DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49CCF0B01C27DFC5003A47DE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49CCF0B71C27DFC5003A47DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49CCF0C01C27DFC5003A47DE /* AtmBarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49CCF0C21C27DFC5003A47DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49CCF0CB1C27DFC5003A47DE /* AtmBarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49CCF0BD1C27DFC5003A47DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49CCF0AB1C27DFC5003A47DE /* AtmBar */;
+			targetProxy = 49CCF0BC1C27DFC5003A47DE /* PBXContainerItemProxy */;
+		};
+		49CCF0C81C27DFC5003A47DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49CCF0AB1C27DFC5003A47DE /* AtmBar */;
+			targetProxy = 49CCF0C71C27DFC5003A47DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		49CCF0B31C27DFC5003A47DE /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49CCF0B41C27DFC5003A47DE /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49CCF0CD1C27DFC5003A47DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		49CCF0CE1C27DFC5003A47DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		49CCF0D01C27DFC5003A47DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AtmBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nicholasren.AtmBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		49CCF0D11C27DFC5003A47DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AtmBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nicholasren.AtmBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		49CCF0D31C27DFC5003A47DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AtmBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nicholasren.AtmBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AtmBar.app/Contents/MacOS/AtmBar";
+			};
+			name = Debug;
+		};
+		49CCF0D41C27DFC5003A47DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AtmBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nicholasren.AtmBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AtmBar.app/Contents/MacOS/AtmBar";
+			};
+			name = Release;
+		};
+		49CCF0D61C27DFC5003A47DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AtmBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nicholasren.AtmBarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AtmBar;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		49CCF0D71C27DFC5003A47DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AtmBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nicholasren.AtmBarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AtmBar;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49CCF0A71C27DFC5003A47DE /* Build configuration list for PBXProject "AtmBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49CCF0CD1C27DFC5003A47DE /* Debug */,
+				49CCF0CE1C27DFC5003A47DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49CCF0CF1C27DFC5003A47DE /* Build configuration list for PBXNativeTarget "AtmBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49CCF0D01C27DFC5003A47DE /* Debug */,
+				49CCF0D11C27DFC5003A47DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		49CCF0D21C27DFC5003A47DE /* Build configuration list for PBXNativeTarget "AtmBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49CCF0D31C27DFC5003A47DE /* Debug */,
+				49CCF0D41C27DFC5003A47DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		49CCF0D51C27DFC5003A47DE /* Build configuration list for PBXNativeTarget "AtmBarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49CCF0D61C27DFC5003A47DE /* Debug */,
+				49CCF0D71C27DFC5003A47DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49CCF0A41C27DFC5003A47DE /* Project object */;
+}
