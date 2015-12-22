@@ -22,36 +22,7 @@ class AtmApi: WebSocketDelegate {
             let toilet = self.fromJson(text)
             success(toilet!)
         }
-        NSTimer.scheduledTimerWithTimeInterval(5, target: self, selector: Selector("connect:"), userInfo: nil, repeats: false)
-
-        self.fetch(success)
-    }
-
-
-    func fetch(success: (Toilet) -> Void) {
-        let session = NSURLSession.sharedSession()
-        let url = NSURL(string: "\(HTTP_BASE_URL)\(self.id)")
-
-
-        let task = session.dataTaskWithURL(url!) {
-            data, response, error in
-            if let error = error {
-                NSLog("api error: \(error)")
-            }
-
-            if let httpResponse = response as? NSHTTPURLResponse {
-                switch httpResponse.statusCode {
-                case 200:
-                    let text = NSString(data: data!, encoding: NSUTF8StringEncoding) as! String
-                    if let toilet = self.fromJson(text) {
-                        success(toilet)
-                    }
-                default:
-                    NSLog("api returned response: %d %@", httpResponse.statusCode, NSHTTPURLResponse.localizedStringForStatusCode(httpResponse.statusCode))
-                }
-            }
-        }
-        task.resume()
+        NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("connect:"), userInfo: nil, repeats: false)
     }
 
     @objc func connect(socket: WebSocket) {
