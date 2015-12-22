@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49C405411C28F3E10015984D /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 49C4053E1C28F3E10015984D /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		49C405461C2910A20015984D /* Starscream.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 49C4053E1C28F3E10015984D /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		49C405471C2910A50015984D /* Starscream.framework.dSYM in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 49C4053F1C28F3E10015984D /* Starscream.framework.dSYM */; };
+		49C405481C2910A90015984D /* Starscream.framework.dSYM in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 49C4053F1C28F3E10015984D /* Starscream.framework.dSYM */; };
 		49CCF0B01C27DFC5003A47DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CCF0AF1C27DFC5003A47DE /* AppDelegate.swift */; };
 		49CCF0B21C27DFC5003A47DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49CCF0B11C27DFC5003A47DE /* Assets.xcassets */; };
 		49CCF0B51C27DFC5003A47DE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49CCF0B31C27DFC5003A47DE /* MainMenu.xib */; };
@@ -33,7 +37,36 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		49C405421C28F3E10015984D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				49C405411C28F3E10015984D /* Starscream.framework in Embed Frameworks */,
+				49C405481C2910A90015984D /* Starscream.framework.dSYM in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49C405441C28FD460015984D /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				49C405461C2910A20015984D /* Starscream.framework in Copy Frameworks */,
+				49C405471C2910A50015984D /* Starscream.framework.dSYM in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		49C4053E1C28F3E10015984D /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/Mac/Starscream.framework; sourceTree = "<group>"; };
+		49C4053F1C28F3E10015984D /* Starscream.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Starscream.framework.dSYM; path = Carthage/Build/Mac/Starscream.framework.dSYM; sourceTree = "<group>"; };
 		49CCF0AC1C27DFC5003A47DE /* AtmBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtmBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49CCF0AF1C27DFC5003A47DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49CCF0B11C27DFC5003A47DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,6 +110,8 @@
 		49CCF0A31C27DFC5003A47DE = {
 			isa = PBXGroup;
 			children = (
+				49C4053E1C28F3E10015984D /* Starscream.framework */,
+				49C4053F1C28F3E10015984D /* Starscream.framework.dSYM */,
 				49CCF0AE1C27DFC5003A47DE /* AtmBar */,
 				49CCF0BE1C27DFC5003A47DE /* AtmBarTests */,
 				49CCF0C91C27DFC5003A47DE /* AtmBarUITests */,
@@ -135,6 +170,8 @@
 				49CCF0A81C27DFC5003A47DE /* Sources */,
 				49CCF0A91C27DFC5003A47DE /* Frameworks */,
 				49CCF0AA1C27DFC5003A47DE /* Resources */,
+				49C405421C28F3E10015984D /* Embed Frameworks */,
+				49C405441C28FD460015984D /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -389,6 +426,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = AtmBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nicholasren.AtmBar;
@@ -400,6 +441,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = AtmBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nicholasren.AtmBar;
