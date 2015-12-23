@@ -3,7 +3,7 @@ import Starscream
 
 class AtmApi: WebSocketDelegate {
 
-    let BASE_URL = "ws://52.62.29.150:8080/ts/"
+    let BASE_URL = "ws://52.62.29.150:8080/level/4/room/male/slot/"
     let HTTP_BASE_URL = "http://52.62.29.150:8080/ts/"
     var socket: WebSocket
     var id: String
@@ -42,7 +42,7 @@ class AtmApi: WebSocketDelegate {
         }
 
         return Toilet(
-        id: json["id"] as! String,
+        id: self.id,
                 occupied: json["occupied"] as! Bool
         )
     }
